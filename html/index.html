@@ -19,7 +19,7 @@
 
         <form action="" class="group-form">
             <label for="">Nome ou número do Pokémon</label>
-            <input type="text" id="name" placeholder="Exemplo: Pikachu ou 25" required autocomplete="off">
+            <input type="text" id="name" placeholder="Exemplo: Pikachu ou 25" onfocus="limpaPlaceholder(this);" onblur="escrevePlaceholder(this);" required autocomplete="off">
             <input type="submit" value="BUSCAR">
         </form>
 
@@ -29,7 +29,6 @@
         <div id="content">
             ...
         </div>
-
     </div> <!-- Fim .container -->
     <script src="../js/script.js"></script>
 </body>

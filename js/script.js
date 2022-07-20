@@ -26,7 +26,7 @@ formulario.addEventListener("submit", function (e) {
             resposta.innerHTML = html;
 
             imagem.innerHTML =
-                "<img src='" + data.sprites.front_default + "'>" + 
+                "<img src='" + data.sprites.front_default + "'>" +
                 "<img src='" + data.sprites.back_default + "'>";
         })
         .catch(function(err) {
@@ -40,8 +40,16 @@ formulario.addEventListener("submit", function (e) {
                 html = 'Erro: ' + err;
             }
         });
-});
+}); //Fim --formulario.addEventListener
 
 function maiuscula(val) {
     return val[0].toUpperCase() + val.substr(1);
+}
+
+function limpaPlaceholder(x) {
+    x.placeholder = '';
+}
+
+function escrevePlaceholder(x) {
+    x.placeholder = "Exemplo: Pikachu ou 25";
 }
